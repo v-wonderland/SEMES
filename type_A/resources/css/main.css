@@ -1,0 +1,269 @@
+main{width: 100%; max-width: 1920px; margin: 0 auto;}
+
+.main_vsl{width: 100%; max-width: 1920px; height: 1000px;}
+.main_vsl .swiper-container{width: 100%; height: 100%; position: relative;}
+.main_vsl .swiper-container .swiper-slide{width: 100%; height: 100%; position: relative;}
+.main_vsl .swiper-container .swiper-slide .tit{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.main_vsl .swiper-container .swiper-slide .paging{position: absolute; left: 40px; top: 50%; transform: translateY(-25%);}
+
+.main_vsl .swiper-container .swiper-slide.sl_01{
+    position: relative;
+}
+.main_vsl .swiper-container .swiper-slide.sl_01 video{
+    width: 1920px; height: 1080px;
+}
+
+.main_vsl .swiper-container .swiper-slide.sl_02{
+    background: url('../images/main_vsl_02_bg.png') no-repeat 0 0; background-size: cover;
+}
+.main_vsl .swiper-container .swiper-slide.sl_03{
+    background: url('../images/main_vsl_03_bg.png') no-repeat 0 0; background-size: cover;
+}
+.main_vsl .swiper-container .swiper-slide.sl_04{
+    background: url('../images/main_vsl_04_bg.png') no-repeat 0 0; background-size: cover;
+}
+.main_vsl .swiper-container .swiper-slide.sl_05{
+    background: url('../images/main_vsl_05_bg.png') no-repeat 0 0; background-size: cover;
+}
+
+.main_vsl .scrollBtn{
+    position: absolute; left: 50%; bottom: 10px; z-index: 5;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    /* opacity: 0; transform: translateY(100px); */
+}
+/* .on #mainPage .scrollBtn{opacity: 1; transform: translateY(0); transition: all 1.2s ease-in-out;} */
+.main_vsl .scrollBtn .txt {
+    font-family: "Nunito Sans";
+    font-size: 12px; font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    text-indent: 5px;
+    color: #ffffff;
+    animation: colorText 5s ease-out infinite, nudgeText 5s ease-out infinite;
+}
+
+.main_vsl .scrollBtn .mouse {
+    background: transparent;
+    position: relative;
+    width: 20px;
+    height: 40px;
+    background-size: 100% 100%;
+    border-radius: 100px;
+    background-size: 225%;
+    border: 2px solid #fff;
+    animation: nudgeMouse 5s ease-out infinite;
+}
+.main_vsl .scrollBtn .mouse:before,.scrollBtn .mouse:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.main_vsl .scrollBtn .mouse:before {
+    width: 32px;
+    height: 55px;
+    background-color: #222a30;
+    opacity: .1;
+    border-radius: 100px;
+}
+.main_vsl .scrollBtn .mouse:after {
+    background-color: #ffffff;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    animation: trackBallSlide 5s linear infinite;
+}
+/* main_vsl Fin */
+
+/* future Start*/
+.future{width: 100%; padding: 280px 0 35px;}
+.future .tit{width: 100%; margin-bottom: 65px; display: block; text-align: center;}
+.future .tit:after{content: ''; display: block; width: 1px; height: 120px; margin:50px auto 0; background-color: #000;}
+.future .tit h2{margin-bottom: 30px; font-size: 48px; font-weight: 700; line-height: 1; letter-spacing: 3px; color: #000;}
+.future .tit p{font-size: 18px; font-weight: 700; line-height: 1; color: #000;}
+
+.future .desc{width: 100%; text-align: center; font-size: 16px; font-weight: 400; line-height: 1.8; color: #000;}
+/* future Fin */
+
+
+
+/* animation keyframes */
+@keyframes colorSlide {
+    0% {
+        background-position: 0% 100%;
+    }
+    20% {
+        background-position: 0% 0%;
+    }
+    21% {
+        background-color: transparent;
+    }
+    29.99% {
+        background-color: #ffffff;
+        background-position: 0% 0%;
+    }
+    30% {
+        background-color: transparent;
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 0% 0%;
+    }
+    51% {
+        background-color: transparent;
+    }
+    59.99% {
+        background-color: #ffffff;
+        background-position: 0% 0%;
+    }
+    60% {
+        background-color: transparent;
+        background-position: 0% 100%;
+    }
+    80% {
+        background-position: 0% 0%;
+    }
+    81% {
+        background-color: transparent;
+    }
+    89.99%, 100% {
+        background-color: #ffffff;
+    }
+}
+@keyframes trackBallSlide {
+    0% {
+        opacity: 1;
+        transform: scale(1) translateY(-10px);
+    }
+    6% {
+        opacity: 1;
+        transform: scale(0.9) translateY(5px);
+    }
+    14% {
+        opacity: 0;
+        transform: scale(0.4) translateY(20px);
+    }
+    15%, 19% {
+        opacity: 0;
+        transform: scale(0.4) translateY(-10px);
+    }
+    28%, 29.99% {
+        opacity: 1;
+        transform: scale(1) translateY(-10px);
+    }
+    30% {
+        opacity: 1;
+        transform: scale(1) translateY(-10px);
+    }
+    36% {
+        opacity: 1;
+        transform: scale(0.9) translateY(5px);
+    }
+    44% {
+        opacity: 0;
+        transform: scale(0.4) translateY(20px);
+    }
+    45%, 49% {
+        opacity: 0;
+        transform: scale(0.4) translateY(-10px);
+    }
+    58%, 59.99% {
+        opacity: 1;
+        transform: scale(1) translateY(-10px);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1) translateY(-10px);
+    }
+    66% {
+        opacity: 1;
+        transform: scale(0.9) translateY(5px);
+    }
+    74% {
+        opacity: 0;
+        transform: scale(0.4) translateY(20px);
+    }
+    75%, 79% {
+        opacity: 0;
+        transform: scale(0.4) translateY(-10px);
+    }
+    88%, 100% {
+        opacity: 1;
+        transform: scale(1) translateY(-10px);
+    }
+}
+@keyframes nudgeMouse {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(8px);
+    }
+    30% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(8px);
+    }
+    60% {
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(8px);
+    }
+    90% {
+        transform: translateY(0);
+    }
+}
+@keyframes nudgeText {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(2px);
+    }
+    30% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(2px);
+    }
+    60% {
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(2px);
+    }
+    90% {
+        transform: translateY(0);
+    }
+}
+@keyframes colorText {
+    21% {
+        color: #4e5559;
+    }
+    30% {
+        color: #ffffff;
+    }
+    51% {
+        color: #4e5559;
+    }
+    60% {
+        color: #ffffff;
+    }
+    81% {
+        color: #4e5559;
+    }
+    90% {
+        color: #ffffff;
+    }
+}

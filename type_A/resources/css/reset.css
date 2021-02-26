@@ -1,0 +1,39 @@
+@charset 'utf-8';
+
+
+
+body,p,div,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd,table,caption,form,fieldset,legend,input,section,header{margin:0; padding:0; box-sizing:border-box}
+
+li{list-style-type:none}
+
+fieldset,img{border:0}
+
+li img, li a, dd img, img, a img{vertical-align:top}
+
+.hdd{width:0; height:0; line-height:0; font-size:0; line-height:0; visibility:hidden; overflow:hidden}
+
+legend,caption{width:0; height:0; line-height:0; font-size:0; line-height:0; visibility:hidden; overflow:hidden}
+
+
+
+body{font-size:12px; letter-spacing:-0.03em; line-height:1.2; color:#000}
+
+
+
+table{width:100%; border-spacing:0}
+
+table th, table td{padding:0}
+
+
+
+input,
+
+select,
+
+a{text-decoration:none; color:inherit; vertical-align:middle}
+
+
+
+input,
+
+select{border:1px solid #cdcdcd; font-family:apple; font-size:12px}

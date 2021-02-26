@@ -1,0 +1,151 @@
+html.no-scroll{overflow: hidden; transition: 0.1s;}
+body{
+    width: 100%; overflow-x: hidden;
+    font-family: "Noto sans KR";
+}
+.eng{font-family: "Blender Pro" !important;}
+
+.wrap{width: 100%; max-width: 1920px; margin: 0 auto; position: relative;}
+
+header{width: 100%; max-width: 1920px; height: 75px; padding: 0 40px; position: absolute; left: 0; top: 0; right: 0; z-index: 5;}
+header:after{content: ''; display: block; visibility: hidden; clear: both;}
+
+header h1{float: left; padding-top: 35px; line-height: 1; position: absolute; z-index: 15;}
+header h1 a{display: inline-block; font-size: 30px; font-weight: bold; line-height: 1; color: #fff;}
+
+header .util{float: right; padding-top: 35px;}
+header .util:after{content: ''; display: block; visibility: hidden; clear: both;}
+header .util li{float: left;}
+header .util .museum{margin-right: 45px; font-size: 14px; font-weight: 700; color: #ffff57; position: relative; z-index: 5;}
+header .util .museum span{font-size: 16px;}
+
+.hamburger {
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: left;
+    position: relative;
+    z-index: 15;
+   /* Hambuger hover animation */
+}
+
+.hamburger span {
+    display: block;
+    margin: 6px 0;
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+.hamburger span:first-child {
+    width: 24px;
+}
+.hamburger span:last-child {
+    width: 16px;
+}
+
+.hamburger:hover span:first-child {
+    transform: translateY(-3px);
+}
+
+.hamburger:hover span:last-child {
+    transform: translateY(3px);
+}
+
+/* Hambuger click animation to cross */
+.hamburger.is-opened span:first-child {
+    width: 100%;
+    transform: translateY(11px) rotate(45deg);
+}
+
+.hamburger.is-opened span:nth-child(2) {
+    transform: scaleX(0);
+}
+
+.hamburger.is-opened span:last-child {
+    width: 100%;
+    transform: translateY(-5px) rotate(-45deg);
+}
+
+.gnb{
+    scroll-behavior: smooth;
+    width: 0;
+    height: 100vh;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    transition: 0.75s ease-in-out;
+}
+.gnb.is-opened{
+    width: 100%;
+}
+.gnb .gnb_wrap{
+    width: 100%; height: 100%; position: relative; box-sizing: border-box;
+}
+
+.gnb .gnb_wrap .global{width: 128px; opacity: 0; position: absolute; top: 42px; right: 95px; z-index: 15;}
+.gnb.gnb.is-opened .gnb_wrap .global{opacity: 1; transition: opacity 0.1s ease-in 0.5s;}
+.gnb .gnb_wrap .global img{width: 100%;}
+
+.gnb .gnb_wrap .bg{
+    position: absolute;
+    top: 0; left: 0; right: 0; z-index: 10;
+    width: 100vw; height: 100vh;
+    background-color: transparent;
+    -webkit-transition: 0.5s ease-out;
+    -moz-transition: 0.5s ease-out;
+    -o-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+}
+.gnb .gnb_wrap .bg video{
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.gnb .gnb_wrap .dim{
+    position: absolute; left: 0; top: 0; z-index: 11;
+    width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5);
+}
+
+.gnb .gnb_wrap .nav{
+    position: relative; top: 25%; z-index: 15;
+    width: 100%; max-width: 1920px;
+    margin: 0 auto; padding: 0 0 0 295px;
+}
+.gnb .gnb_wrap .nav .menu{display: block; width: 490px;}
+.gnb .gnb_wrap .nav .menu > li{
+    font-family: "Blender Pro"; 
+    font-size: 40px; font-weight: 700; line-height: 1; color: #fff;
+    display: block; width: 490px; margin: 40px 0 0 0; 
+    position: relative; z-index: 10;
+    cursor: pointer;
+}
+.gnb .gnb_wrap .nav .menu > li:first-child{margin: 0 0 0 0;}
+
+.gnb .gnb_wrap .nav .menu > li .sub_menu{
+    display: none;
+    position: absolute; top: 10px; right: -199px; z-index: 10;
+    font-family: "Noto sans KR"; font-size: 16px; font-weight: 700; line-height: 1;
+}
+.gnb .gnb_wrap .nav .menu > li:last-child .sub_menu{top: -150px;}
+.gnb .gnb_wrap .nav .menu > li:hover .sub_menu{display: block; width: 200px;}
+
+.gnb .gnb_wrap .nav .menu > li .sub_menu > li{width: 100%; margin-bottom: 40px; cursor: pointer; }
+.gnb .gnb_wrap .nav .menu > li .sub_menu > li a{padding-bottom: 6px;}
+.gnb .gnb_wrap .nav .menu > li .sub_menu > li a:hover{border-bottom: 1px solid #fff;}
+.gnb .gnb_wrap .nav .menu > li .sub_menu > li:last-child{margin-bottom: 0;}
+
+.gnb .gnb_wrap .bt_menu{display: block; position: absolute; left: 40px; bottom: 60px; z-index: 15;}
+.gnb .gnb_wrap .bt_menu ul{display: block; width: 100%;}
+.gnb .gnb_wrap .bt_menu ul:after{content: ''; display: block; visibility: hidden; clear: both;}
+.gnb .gnb_wrap .bt_menu ul li{float: left; margin-right: 40px;}
+
+@media screen and (min-width:2560px){
+    .gnb .gnb_wrap{padding:0 320px;}
+    .gnb .gnb_wrap .nav{top: 30%;}
+    .gnb .gnb_wrap .global{position: absolute; top: 42px; right: 430px; z-index: 15;}
+    .gnb .gnb_wrap .bt_menu{left: 360px;}
+}
