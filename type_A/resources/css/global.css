@@ -1,7 +1,7 @@
 html.no-scroll{overflow: hidden; transition: 0.1s;}
 body{
     width: 100%; overflow-x: hidden;
-    font-family: "Noto sans KR";
+    font-family: "Noto sans CJK KR";
 }
 .eng{font-family: "Blender Pro" !important;}
 
@@ -10,8 +10,9 @@ body{
 header{width: 100%; max-width: 1920px; height: 75px; padding: 0 40px; position: absolute; left: 0; top: 0; right: 0; z-index: 5;}
 header:after{content: ''; display: block; visibility: hidden; clear: both;}
 
-header h1{float: left; padding-top: 35px; line-height: 1; position: absolute; z-index: 15;}
-header h1 a{display: inline-block; font-size: 30px; font-weight: bold; line-height: 1; color: #fff;}
+header h1{width: 140px; height: 32px; float: left; padding-top: 35px; line-height: 1; position: absolute; z-index: 15;}
+header h1 a{display: block; width: 100%; font-size: 30px; font-weight: bold; line-height: 1; color: #fff; }
+header h1 a img{width: 100%;}
 
 header .util{float: right; padding-top: 35px;}
 header .util:after{content: ''; display: block; visibility: hidden; clear: both;}
@@ -113,16 +114,27 @@ header .util .museum span{font-size: 16px;}
 .gnb .gnb_wrap .nav{
     position: relative; top: 25%; z-index: 15;
     width: 100%; max-width: 1920px;
-    margin: 0 auto; padding: 0 0 0 295px;
+    margin: 0 auto;
 }
 .gnb .gnb_wrap .nav .menu{display: block; width: 490px;}
 .gnb .gnb_wrap .nav .menu > li{
     font-family: "Blender Pro"; 
     font-size: 40px; font-weight: 700; line-height: 1; color: #fff;
-    display: block; width: 490px; margin: 40px 0 0 0; 
+    display: block; width: 490px; margin: 40px 0 0 0; padding-right: 400px;
     position: relative; z-index: 10;
     cursor: pointer;
 }
+.gnb .gnb_wrap .nav .menu > li .dep01:before{
+    content: '';display: block; width: 0px; height: 1px; background: #fff;
+    position: absolute; left: 0; bottom: -15px; z-index: 5;
+    transition: width 0.35s ease-in;
+}
+.gnb .gnb_wrap .nav .menu > li:hover .dep01:before{
+    width: 57%;
+}
+.gnb .gnb_wrap .nav .menu > li .dep01{padding: 0 0 10px 295px;}
+.gnb .gnb_wrap .nav .menu > li a{display: inline-block; opacity: 0.5;}
+.gnb .gnb_wrap .nav .menu > li:hover a{opacity: 1;}
 .gnb .gnb_wrap .nav .menu > li:first-child{margin: 0 0 0 0;}
 
 .gnb .gnb_wrap .nav .menu > li .sub_menu{
@@ -130,12 +142,15 @@ header .util .museum span{font-size: 16px;}
     position: absolute; top: 10px; right: -199px; z-index: 10;
     font-family: "Noto sans KR"; font-size: 16px; font-weight: 700; line-height: 1;
 }
-.gnb .gnb_wrap .nav .menu > li:last-child .sub_menu{top: -150px;}
+.gnb .gnb_wrap .nav .menu > li:nth-child(3) .sub_menu{top: -45px;}
+.gnb .gnb_wrap .nav .menu > li:nth-child(4) .sub_menu{top: -170px;}
+.gnb .gnb_wrap .nav .menu > li:nth-child(5) .sub_menu{top: -150px;}
+.gnb .gnb_wrap .nav .menu > li:last-child .sub_menu{top: -170px;}
 .gnb .gnb_wrap .nav .menu > li:hover .sub_menu{display: block; width: 200px;}
 
 .gnb .gnb_wrap .nav .menu > li .sub_menu > li{width: 100%; margin-bottom: 40px; cursor: pointer; }
-.gnb .gnb_wrap .nav .menu > li .sub_menu > li a{padding-bottom: 6px;}
-.gnb .gnb_wrap .nav .menu > li .sub_menu > li a:hover{border-bottom: 1px solid #fff;}
+.gnb .gnb_wrap .nav .menu > li .sub_menu > li a{padding-bottom: 6px; opacity: 0.5;}
+.gnb .gnb_wrap .nav .menu > li .sub_menu > li a:hover{border-bottom: 1px solid #fff; opacity: 1;}
 .gnb .gnb_wrap .nav .menu > li .sub_menu > li:last-child{margin-bottom: 0;}
 
 .gnb .gnb_wrap .bt_menu{display: block; position: absolute; left: 40px; bottom: 60px; z-index: 15;}

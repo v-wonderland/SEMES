@@ -2,7 +2,7 @@
 
 
 
-body,p,div,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd,table,caption,form,fieldset,legend,input,section,header{margin:0; padding:0; box-sizing:border-box}
+body,p,div,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd,table,caption,form,fieldset,legend,input,section,header,span{margin:0; padding:0; outline: none; box-sizing:border-box}
 
 li{list-style-type:none}
 

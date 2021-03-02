@@ -6,15 +6,15 @@
 @import url('global.css');
 
 @font-face{
-	font-family: Noto Sans KR;
+	font-family: Noto Sans CJK KR;
 	font-weight: 400;
-	src: url('../font/NotoSansKR-Regular.otf');
+	src: url('../font/NOTOSANSCJKKR-REGULAR.OTF');
 }
 
 @font-face{
-	font-family: Noto sans KR;
+	font-family: Noto sans CJK KR;
 	font-weight: 700;
-	src: url('../font/NotoSansKR-Bold.otf');
+	src: url('../font/NOTOSANSCJKKR-BOLD.OTF');
 }
 
 @font-face{
@@ -27,6 +27,12 @@
 	font-family: Nunito Sans;
 	font-weight: 600;
 	src: url('../font/NunitoSans-SemiBold.ttf');
+}
+
+@font-face{
+	font-family: Nunito Sans;
+	font-weight: 700;
+	src: url('../font/NunitoSans-Bold.ttf');
 }
 
 @font-face{
