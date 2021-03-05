@@ -13,7 +13,7 @@ main{width: 100%; max-width: 1920px; margin: 0 auto;}
 }
 .main_vsl .swiper-container .swiper-slide.sl_01 .tit{
     opacity: 0;
-    animation: dpnone 5s ease-in-out;
+    animation: dpnone 5s ease-in-out !important;
 }
 .main_vsl .swiper-container .swiper-slide.sl_01 video{
     width: 1920px; height: 1080px;
