@@ -233,20 +233,43 @@ $(document).ready(function(){
     var $target = $("#product main .vsl .cont h2");
     var $changeTarget = $("#product main #vslBg");
 
-    $($target).mouseenter(function(){
+    $($target).click(function(){
         currentIndex = $(this).attr("data-vslNumb");
         $changeTarget.css({
-            "background-image" : "url(" + "../" + "resources/" + "images/"+ " product/ "+ vslImg[currentIndex] + ")",
+            "background-image" : "url(" + "../resources/images/product/" + vslImg[currentIndex] + ")",
             "background-repeat" : "no-repeat",
             "background-size" : "cover"
         });
     });
 
-    $('#product main .vsl .cont h2').mouseenter(function(){
+    // $('#product main .vsl .cont h2').mouseenter(function(){
+    //     $('#product main .vsl').css({
+    //         "background-image" : "url(../resources/images/product/main_vsl_bg_01.png)",
+    //         "background-repeat" : "no-repeat",
+    //         "background-size" : "cover"
+    //     });
+    // });
+
+    $('#product main .vsl .cont.photo h2').click(function(){
         $(this).addClass('active');
+        $('#product main .vsl .cont.clean h2').removeClass('active');
+        $('#product main .vsl .cont.etch h2').removeClass('active');
     });
 
-    $('#product main .vsl .cont h2').mouseleave(function(){
-        $(this).removeClass('active');
+    $('#product main .vsl .cont.etch h2').click(function(){
+        $(this).addClass('active');
+        $('#product main .vsl .cont.photo h2').removeClass('active');
+        
+        $('#product main .vsl .cont.clean h2').removeClass('active');
     });
+
+    $('#product main .vsl .cont.clean h2').click(function(){
+        $(this).addClass('active');
+        $('#product main .vsl .cont.etch h2').removeClass('active');
+        $('#product main .vsl .cont.photo h2').removeClass('active');
+    });
+
+    // $('#product main .vsl .cont h2').mouseleave(function(){
+    //     $(this).removeClass('active');
+    // });
 });
