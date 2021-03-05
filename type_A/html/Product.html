@@ -137,7 +137,225 @@
                     <p>세정장비</p>
                 </div>
             </section>
+
+            <!-- <section class="equip">
+
+                <div class="sl_wrap01">
+
+                    <div class="sc_tab"><img src="../resources/images/product_slide_01_tab.png" alt="tab"></div>
+                    <div class="req"><a href="#"><img src="../resources/images/product_slide_request.png" alt="request"></a></div>
+                    <div class="info_btn"><a href="#"><img src="../resources/images/product_slide_info_btn.png" alt=""></a></div>
+
+                    <div class="swiper-container out_sl">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide sl_01" data-title="INTRO">
+                                <div class="inner">
+                                    <div class="desc fl">
+                                        <dl>
+                                            <dt><img src="../resources/images/product_slide_01_dt.png" alt=""></dt>
+                                            <dd><img src="../resources/images/product_slide_01_dd.png" alt=""></dd>
+                                        </dl>
+                                        <a href="#" class="bro"><img src="../resources/images/product_slide_01_brochure.png" alt=""></a>
+                                    </div>
+                                    <div class="visual fr"><img src="../resources/images/product_slide_01_sc01.png" alt=""></div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide sl_02" data-title="SPEC">
+                                <div class="desc"><img src="../resources/images/product_slide_01_sc02.png" alt=""></div>
+                            </div>
+                            
+                            <div class="swiper-slide sl_03" data-title="GALLERY">
+                                <div class="sl_03_wrap">
+                                    
+                                    <div class="swiper-container in_sl">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="../resources/images/product_slide_01_sc03_01.png" alt=""></div>
+                                            <div class="swiper-slide"><img src="../resources/images/product_slide_01_sc03_02.png" alt=""></div>
+                                            <div class="swiper-slide"><img src="../resources/images/product_slide_01_sc03_03.png" alt=""></div>
+                                            <div class="swiper-slide"><img src="../resources/images/product_slide_01_sc03_04.png" alt=""></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="in_sl_paging">
+                                        <div class="swiper-button-next in_sl"></div>
+                                        <div class="swiper-button-prev in_sl"></div>
+                                    </div>
+
+                                    <script>
+                                        var swiper = new Swiper('.sl_03 .sl_03_wrap .swiper-container.in_sl', {
+                                            autoHeight:'auto',
+                                            touchRatio: 0,
+                                            slidesPerView: 'auto',
+                                            spaceBetween: 2,
+                                            navigation: {
+                                                nextEl: '.sl_03 .sl_03_wrap .in_sl_paging .swiper-button-next',
+                                                prevEl: '.sl_03 .sl_03_wrap .in_sl_paging .swiper-button-prev',
+                                            },
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="swiper-button-next out_sl"></div>
+                    <div class="swiper-button-prev out_sl"></div>
+
+                    <div class="swiper-pagination ns"></div>
+
+                    <script>
+                        var titles = document.querySelectorAll('.equip .sl_wrap01 .swiper-container.out_sl .swiper-slide');
+                        var title = [];
+                            titles.forEach(function(element) {
+                                title.push(element.dataset.title);
+                            });
+    
+                        var swiper = new Swiper('.equip .sl_wrap01 .swiper-container.out_sl', {
+                            autoHeight: true,
+                            clickable:false,
+                            touchRatio: 0,
+                            pagination: {
+                                el: '.equip .sl_wrap01 .swiper-pagination',
+                                clickable: true,
+                                renderBullet: function (index, className) {
+                                    return '<span class="' + className + '">' + title[index] + '</span>';
+                                },
+                            },
+                            navigation: {
+                                nextEl: '.equip .sl_wrap01 .swiper-button-next.out_sl',
+                                prevEl: '.equip .sl_wrap01 .swiper-button-prev.out_sl',
+                            },
+                        });
+                    </script>
+
+                </div>
+
+            </section> -->
+
+            <section class="equip">
+                <div class="sl_wrap">
+                    
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="tab"><img src="../resources/images/product_slide_01_tab_01.png" alt=""></div>
+                                <div class="desc">
+                                    <dl>
+                                        <dt><img src="../resources/images/product/slide_01_crystal_desc_01.png" alt=""></dt>
+                                        <dd><img src="../resources/images/product/slide_01_crystal_desc_02.png" alt=""></dd>
+                                    </dl>
+                                    <a href="#" class="bro_btn"><img src="../resources/images/product/slide_bro_btn.png" alt=""></a>
+                                </div>
+
+                                <div class="visual"><img src="../resources/images/product/slide_01_crystal_vsl.png" alt=""></div>
+
+                                <div class="info_btn">
+                                    <img class="open1" src="../resources/images/product/slide_info_btn.png" alt="">
+                                    <img class="close1" src="../resources/images/product/slide_info_close_btn.png" alt="">
+                                    <div class="pop" id="popUp1">
+                                        <img class="layer" src="../resources/images/product/slide_01_crystal_layerpop.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="req_btn"><img src="../resources/images/product/slide_req_btn.png" alt=""></div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="tab"><img src="../resources/images/product_slide_02_tab.png" alt=""></div>
+                                <div class="desc">
+                                    <dl>
+                                        <dt><img src="../resources/images/product/slide_02_lotus_desc_01.png" alt=""></dt>
+                                        <dd><img src="../resources/images/product/slide_02_lotus_desc_02.png" alt=""></dd>
+                                    </dl>
+                                    <a href="#" class="bro_btn"><img src="../resources/images/product/slide_bro_btn.png" alt=""></a>
+                                </div>
+                                <div class="visual"><img src="../resources/images/product/slide_02_lotus_vsl.png" alt=""></div>
+
+                                <div class="info_btn">
+                                    <img class="open2" src="../resources/images/product/slide_info_btn.png" alt="">
+                                    <img class="close2" src="../resources/images/product/slide_info_close_btn.png" alt="">
+                                    <div class="pop" id="popUp2">
+                                        <img class="layer" src="../resources/images/product/slide_02_lotus_layerpop.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="req_btn"><img src="../resources/images/product/slide_req_btn.png" alt=""></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tab"><img src="../resources/images/product_slide_03_tab.png" alt=""></div>
+                                <div class="desc">
+                                    <dl>
+                                        <dt><img src="../resources/images/product/slide_03_prime_desc_01.png" alt=""></dt>
+                                        <dd><img src="../resources/images/product/slide_03_prime_desc_02.png" alt=""></dd>
+                                    </dl>
+                                    <a href="#" class="bro_btn"><img src="../resources/images/product/slide_bro_btn.png" alt=""></a>
+                                </div>
+                                <div class="visual"><img src="../resources/images/product/slide_03_prime_vsl.png" alt=""></div>
+
+                                <div class="info_btn">
+                                    <img class="open3" src="../resources/images/product/slide_info_btn.png" alt="">
+                                    <img class="close3" src="../resources/images/product/slide_info_close_btn.png" alt="">
+                                    <div class="pop" id="popUp3">
+                                        <img class="layer" src="../resources/images/product/slide_03_prime_layerpop.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="req_btn"><img src="../resources/images/product/slide_req_btn.png" alt=""></div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="tab"><img src="../resources/images/product_slide_04_tab.png" alt=""></div>
+                                <div class="desc">
+                                    <dl>
+                                        <dt><img src="../resources/images/product/slide_04_iris_desc_01.png" alt=""></dt>
+                                        <dd><img src="../resources/images/product/slide_04_iris_desc_02.png" alt=""></dd>
+                                    </dl>
+                                    <a href="#" class="bro_btn"><img src="../resources/images/product/slide_bro_btn.png" alt=""></a>
+                                </div>
+                                <div class="visual"><img src="../resources/images/product/slide_04_iris_vsl.png" alt=""></div>
+
+                                <div class="info_btn">
+                                    <img class="open4"  src="../resources/images/product/slide_info_btn.png" alt="">
+                                    <img class="close4"  src="../resources/images/product/slide_info_close_btn.png" alt="">
+                                    <div class="pop" id="popUp4">
+                                        <img class="layer" src="../resources/images/product/slide_04_iris_layerpop.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="req_btn"><img src="../resources/images/product/slide_req_btn.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        var swiper = new Swiper('.swiper-container', {
+                            direction: 'vertical',
+                            effect: 'fade',
+                            speed: 800,
+                            slidesPerView: 1,
+                            spaceBetween: 0,
+                            mousewheel: false,
+                        });
+                    </script>
+                </div>
+            </section>
+            
+            <section class="sect_06 scrollCtr">
+                <div class="bcg1"></div>
+                <div class="desc">
+                    <ul>
+                        <li><a href="#"><img src="../resources/images/product/sect_06_desc_01.png" alt=""></a></li>
+                        <li><a href="#"><img src="../resources/images/product/sect_06_desc_02.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </section>
         </main>
+
+        <footer><img src="../resources/images/product/footer.png" alt=""></footer>
     </div>
     
 </body>

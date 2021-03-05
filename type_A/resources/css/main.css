@@ -2,7 +2,7 @@ main{width: 100%; max-width: 1920px; margin: 0 auto;}
 .fl{float: left;}
 .fr{float: right;}
 
-.main_vsl{width: 100%; max-width: 1920px; height: 1000px;}
+.main_vsl{width: 100%; max-width: 1920px; height: 100vh;}
 .main_vsl .swiper-container{width: 100%; height: 100%; position: relative;}
 .main_vsl .swiper-container .swiper-slide{width: 100%; height: 100%; position: relative;}
 .main_vsl .swiper-container .swiper-slide .tit{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
@@ -89,12 +89,15 @@ main{width: 100%; max-width: 1920px; margin: 0 auto;}
 /* future Start*/
 .future{width: 100%; padding: 280px 0 35px;}
 .future .tit{width: 100%; margin-bottom: 65px; display: block; text-align: center;}
-.future .tit:after{content: ''; display: block; width: 1px; height: 120px; margin:50px auto 0; background-color: #000;}
+/* .future .tit:after{content: ''; display: block; width: 1px; height: 120px; margin:50px auto 0; background-color: #000;} */
 .future .tit h2{margin-bottom: 30px; font-size: 48px; font-weight: 700; line-height: 1; letter-spacing: 3px; color: #000;}
 .future .tit p{font-size: 18px; font-weight: 700; line-height: 1; color: #000;}
+.future .tit p:after{content: ''; display: block; width: 1px; height: 120px; margin:50px auto 0; background-color: #000;}
 .future .desc{width: 100%; text-align: center; font-size: 16px; font-weight: 400; line-height: 1.8; color: #000;}
 
-.fslide{width: 100%; max-width: 1920px; height: 500px; margin: 0 auto; position: relative; overflow: hidden;}
+.fslide{width: 100%; max-width: 1920px; height: 650px; margin: 0 auto; position: relative; overflow: hidden;}
+.fslide02{height: 500px;}
+.fslide03{height: 800px;}
 .fslide .inner{max-width: 100%; height: 100%;}
 .fslide .inner .desc{width: 1130px; height: 100%; margin: 0 auto; position: relative;}
 .fslide .inner .desc .sec{position: absolute; top: 50%; transform: translate(0, -50%); -webkit-transform: translate(0, -50%); -ms-transform: translate(0, -50%); z-index: 5; display: block;}
@@ -105,13 +108,18 @@ main{width: 100%; max-width: 1920px; margin: 0 auto;}
 .fslide .inner .desc .sec dl dd.more_btn a{display: inline-block;}
 
 
-.fslide01 .inner .bcg1{position: absolute; width: 100%; height: 100%; background: url('../images/futre_fslide_01_bg.png')no-repeat center 0; background-size: cover;}
+.fslide01 .inner .bcg1{position: absolute; width: 100%; height: 100%; background: url('../images/future_fslide_01_bg.png')no-repeat center 0; background-size: cover;}
 .fslide01 .inner .desc .sec{left: 0;}
 
-.fslide02 .inner .bcg1{position: absolute; width: 100%; height: 100%; background: url('../images/futre_fslide_02_bg.png')no-repeat center 0; background-size: cover;}
+.fslide02 .inner .bcg1{position: absolute; width: 100%; height: 100%; background: url('../images/future_fslide_02_bg.png')no-repeat center 0; background-size: cover;}
 .fslide02 .inner .desc .sec{right: 0;}
+.fslide02 .inner .desc:before{
+    content: ''; display: block; width: 110px; height: 350px;
+    position: absolute; right: 418px; top: 94px; z-index: 4;
+    background: url('../images/futre_fslide_02_desc_bg.png')no-repeat 0 0; background-size: cover;
+}
 
-.fslide03 .inner .bcg1{position: absolute; width: 100%; height: 100%; background: url('../images/futre_fslide_03_bg.png')no-repeat center 0; background-size: cover;}
+.fslide03 .inner .bcg1{position: absolute; width: 100%; height: 100%; background: url('../images/future_fslide_03_bg.png')no-repeat center 0; background-size: cover;}
 .fslide03 .inner .desc .sec{left: 0;}
 .fslide03 .inner .desc .sec dl dt{line-height: 1.4;}
 /* future fslide Fin */
@@ -119,9 +127,9 @@ main{width: 100%; max-width: 1920px; margin: 0 auto;}
 /* tech Start */
 .tech{width: 100%; padding: 280px 0 36px;}
 .tech .tit{width: 100%; margin-bottom: 65px; display: block; text-align: center;}
-.tech .tit:after{content: ''; display: block; width: 1px; height: 120px; margin:50px auto 0; background-color: #000;}
 .tech .tit h2{margin-bottom: 30px; font-size: 48px; font-weight: 700; line-height: 1; letter-spacing: 3px; color: #000;}
 .tech .tit p{font-size: 18px; font-weight: 700; line-height: 1; color: #000;}
+.tech .tit p:after{content: ''; display: block; width: 1px; height: 120px; margin:50px auto 0; background-color: #000;}
 .tech .desc{width: 100%; text-align: center; font-size: 16px; font-weight: 400; line-height: 1.8; color: #000;}
 
 .tech_cont{width: 100%; height: 1000px;}
@@ -214,12 +222,12 @@ main{width: 100%; max-width: 1920px; margin: 0 auto;}
 .about .inner .ra .sl_wrap .swiper-slide{position: relative;}
 .about .inner .ra .sl_wrap .swiper-slide .bg{position: absolute; right: 0; top: 0; z-index: 4;}
 .about .inner .ra .sl_wrap .swiper-slide .ceo{
-    position: absolute; top: 0; left: 0; z-index: 5; opacity: 0;
+    position: absolute; top: 0; left: 0; z-index: 5; opacity: 1;
     transform: translate(100px, 110px); transition: 0.75s ease-in-out 0.25s;
 }
-.about .inner .ra .sl_wrap .swiper-slide-active .ceo{
+/* .about .inner .ra .sl_wrap .swiper-slide-active .ceo{
     opacity: 1; transform: translate(0, 110px);
-}
+} */
 
 /* .about .inner .ra .visual{width: 100%; position: relative; text-align: right;}
 .about .inner .ra .visual .ceo{
@@ -275,8 +283,9 @@ main{width: 100%; max-width: 1920px; margin: 0 auto;}
 #process:after{position: absolute; top: 0; right: 50%; width: 50%; bottom: 0; content: ''; z-index: 4; background-color: #fff;}
 
 #process .lab-row{display: flex; height: 920px; min-height: 920px;}
-#process .lab-row .lab-col{display: flex; flex: 1 0; align-items: center; position: relative;}
-#process .lab-row .lab-col:first-child{overflow: hidden;}
+#process .lab-row .lab-col{display: flex; width: 1020px; align-items: center; position: relative;}
+#process .lab-row .lab-col:first-child{width: 900px;}
+#process .lab-row .lab-col:first-child .tit{position: absolute; right: 0; top: 50%; transform: translate(40px, -50%);}
 
 #process .section-bgs{position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; background-color: #fff; transform: translateX(-50%) scale(2);}
 #process .section-bgs:after{background: rgba(0, 0, 0, 0.15); position: absolute; left: 0; top: 0; right: 0; bottom: 0; content: '';}
@@ -332,7 +341,7 @@ main{width: 100%; max-width: 1920px; margin: 0 auto;}
 #process.active .lab-title{
     transition: transform 1.2s cubic-bezier(.23,1,.32,1),opacity 1.2s; 
     will-change: transform,opacity; 
-    transform: translateY(0); 
+    transform: translate(-5px, 0); 
     opacity: 1; 
     transition-delay: 0.6s,0.6s;
 }
@@ -344,19 +353,19 @@ main{width: 100%; max-width: 1920px; margin: 0 auto;}
     flex: 1;
     transition-delay: .6s;
     opacity: 0;
-    transform: translateY(80px);
+    transform: translate(-5px, 80px);
 }
 #process.active .laboratories{
     transition: transform 1.6s cubic-bezier(.23,1,.32,1),opacity 1.6s;
     will-change: transform,opacity;
-    transform: translateY(0);
+    transform: translate(-5px, 0);
     opacity: 1;
 }
 #process .lab-desc{
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-57%);
     text-align: center;
     z-index: 1;
     white-space: nowrap;
@@ -367,6 +376,8 @@ main{width: 100%; max-width: 1920px; margin: 0 auto;}
 #process .lab-desc .swiper-container{opacity: 0;}
 #process .lab-desc.active .swiper-container{opacity: 1;}
 
+#process .lab-desc .n_02{position: absolute; right: -350px; bottom: 80px; z-index: 5;}
+#process .lab-desc .paging{position: absolute; right: -200px; bottom: -125px; z-index: 5;}
 #process .lab-desc .desc-img{
     font-size: 0;
     text-align: center;
@@ -477,7 +488,36 @@ main{width: 100%; max-width: 1920px; margin: 0 auto;}
 .inside .cont .ra li > img{margin-bottom: 40px;}
 .inside .cont .ra li dl dt{margin-bottom: 25px;}
 
-
+.move{opacity: 0; transform: translateY(100px);}
+.move.right{opacity: 0; transform: translateX(100px);}
+.move.left{opacity: 0; transform: translateX(-100px);}
+.move.left.active{
+    opacity:1 !important;
+    transform:translateX(0) !important;
+    -webkit-transform:translateX(0);
+    -ms-transform:translateX(0);
+    transition:all 1.2s !important;
+    -webkit-transition:all 1.2s;
+    -ms-transition:all 1.2s;
+}
+.move.right.active{
+    opacity:1 !important;
+    transform:translateX(0) !important;
+    -webkit-transform:translateX(0);
+    -ms-transform:translateX(0);
+    transition:all 1.2s !important;
+    -webkit-transition:all 1.2s;
+    -ms-transition:all 1.2s;
+}
+.move.active{
+    opacity:1 !important;
+    transform:translateY(0) !important;
+    -webkit-transform:translateY(0);
+    -ms-transform:translateY(0);
+    transition:all 1.2s !important;
+    -webkit-transition:all 1.2s;
+    -ms-transition:all 1.2s;
+}
 
 /* animation keyframes */
 @keyframes colorSlide {

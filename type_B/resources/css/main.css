@@ -1,5 +1,109 @@
-main{width: 100%; max-width: 1920px; margin: 0 auto;}
+body{width: 100%; max-width: 1920px; margin: 0 auto;}
+main{width: 100%;}
 .fl{float: left;}
 .fr{float: right;}
 
+.wrap .main_vsl{width: 100%; height: 1000px; position: relative;}
+.wrap .main_vsl .sl_wrap{width: 100%; height: 100%;}
+.wrap .main_vsl .sl_wrap .swiper-slide{width: 100%; height: 100%; background-size: cover; position: relative;}
+.wrap .main_vsl .sl_wrap .swiper-slide:first-child{background: url('../images/main_vsl_bg.png')no-repeat 0 0;}
+.wrap .main_vsl .sl_wrap .swiper-slide:nth-child(2){background: url('../images/main_vsl_02_bg.png')no-repeat 0 0;}
+.wrap .main_vsl .sl_wrap .swiper-slide:nth-child(3){background: url('../images/main_vsl_03_bg.png')no-repeat 0 0;}
 
+.wrap .main_vsl .sl_wrap .swiper-slide .desc{
+    position: absolute; left: 420px; top: 340px; z-index: 10;
+}
+.wrap .main_vsl .sl_wrap .swiper-slide .desc dt{margin-bottom: 50px;}
+
+.wrap .main_vsl .sl_wrap .swiper-pagination{width: auto; bottom: 540px; left: -60px; transform: rotate(-90deg);}
+.wrap .main_vsl .sl_wrap .swiper-pagination-bullet{
+    width: auto; height: auto; margin: 0 65px 0 0; padding-bottom: 5px;
+    border-radius:0; background: none;
+    font-size: 16px; font-weight: 400; line-height: 1; color: #fff;
+}
+.wrap .main_vsl .sl_wrap .swiper-pagination-bullet-active{border-radius: 0; border-bottom: 1px solid #fff;}
+
+.wrap .main_vsl .scroll_btn{display: block; width: 160px; position: absolute; left: 420px; bottom: 60px; z-index: 10;}
+.wrap .main_vsl .bar{display: block; width: 720px; position: absolute; right: 0; bottom: 0; z-index: 10;}
+
+.wrap .product{width: 100%; position: relative;}
+.wrap .product .rect{position: absolute; right: 0; top: 0; z-index: -1;}
+.wrap .product .inner{padding: 180px 120px 0;}
+.wrap .product .inner .tit{padding: 0 0 0 250px; margin-bottom: 175px;}
+.wrap .product .inner .tit h2{margin-bottom: 70px;}
+
+.wrap .product .inner ul li:after{content: ''; display: block; visibility: hidden; clear: both;}
+.wrap .product .inner ul li.cont_02{transform: translateY(-70px);}
+.wrap .product .inner ul li.cont_03{transform: translateY(-140px);}
+
+.wrap .product .inner ul li .fl.desc{margin-left: 250px;}
+.wrap .product .inner ul li .fr.desc{margin-right: 265px;}
+.wrap .product .inner ul li .desc{margin-top: 195px;}
+.wrap .product .inner ul li .desc dl dt{margin-bottom: 58px;}
+.wrap .product .inner ul li .desc dl dd:first-of-type{margin-bottom: 50px;}
+.wrap .product .inner ul li .desc > a{display: inline-block; margin-top: 80px;}
+
+.wrap .equip{width: 100%; position: relative; padding: 80px 0 0;}
+.wrap .equip .visual{
+    width: 50%; height: 900px; position: relative;
+    background: url('../images/equipment_left_bg_01.png')no-repeat 0 0;
+    background-size: cover;
+}
+.wrap .equip .visual .tit{position: absolute; left: 270px; top: 245px; z-index: 10;}
+.wrap .equip .visual .tit p{font-size: 84px; font-weight: 700; line-height: 1; color: #fff;}
+.wrap .equip .visual .tab{position: absolute; right: 75px; bottom: 70px; z-index: 10;}
+
+.wrap .equip .sl_wrap{display: block;}
+.wrap .equip .sl_wrap .swiper-container{width: 1160px; height: auto; position: absolute; top: 290px; right: 0; z-index: 15;}
+.wrap .equip .sl_wrap .swiper-slide{width: 400px !important; height: auto;}
+.wrap .equip .sl_wrap .swiper-pagination{width: 740px; height: 4px; bottom: 50px; right: 120px; top: unset; z-index: 20;}
+
+.wrap .company{width: 100%;  position: relative;}
+.wrap .company .desc{padding:160px 270px 115px;}
+.wrap .company .desc h2{margin-bottom: 53px;}
+.wrap .company .desc dl{display: block; margin-bottom: 80px;}
+.wrap .company .desc dl dt{margin-bottom: 50px;}
+.wrap .company .visual{position: absolute; right: 0; bottom: 0; z-index: 10;}
+
+.wrap .busi{width: 100%; height: 900px; padding: 150px 0 0 260px; background: url('../images/busi_bg.png')no-repeat 0 0; background-size: cover;}
+.wrap .busi h2{margin-bottom: 55px;}
+.wrap .busi dl dt{margin-bottom: 40px;}
+.wrap .busi dl{margin-bottom: 100px;}
+.wrap .busi ul{display: block;}
+.wrap .busi ul:after{content: ''; display: block; visibility: hidden; clear: both;}
+.wrap .busi ul li{float: left; display: block; margin-right: 240px;}
+.wrap .busi ul li:first-child{margin-right: 260px;}
+.wrap .busi > a{display: block; margin-top: 90px;}
+
+.wrap .media{width: 100%; padding: 160px 0 220px;}
+.wrap .media .tit{padding: 0 0 0 270px; margin-bottom: 80px;}
+.wrap .media .tit h2{margin-bottom: 60px;}
+.wrap .media .sl_wrap{width: 100%; margin-bottom: 80px;}
+.wrap .media .sl_wrap .swiper-slide{width: auto !important; position: relative;}
+.wrap .media .sl_wrap .swiper-slide .desc dl{display: block;}
+.wrap .media .sl_wrap .swiper-slide:nth-child(odd) .desc{position: absolute; bottom: 60px; left: 35px; z-index: 10; font-size: 24px; font-weight: 700; line-height: 1.4; color: #fff;}
+.wrap .media .sl_wrap .swiper-slide:nth-child(even) .desc{margin: 42px 0 0 20px;}
+.wrap .media .sl_wrap .swiper-slide:nth-child(even) .desc dl dt{margin-bottom: 28px;}
+.wrap .media .btn_wrap{width: 100%; text-align: center;}
+.wrap .media .btn_wrap > a{display: inline-block;}
+
+.wrap .museum{width: 1680px; height: 764px; margin: 0 auto; padding: 92px 0 0; position: relative; background: url('../images/museum_bg.png')no-repeat 0 0; background-size: 100%;}
+.wrap .museum .desc{display: block; width: 751px; height: 500px; padding: 168px 120px 0 150px; margin-left: 449px; position: relative; text-align: center;}
+.wrap .museum .desc:before{content: ''; display: block; width: 1px; height: 160px; position: absolute; left: 0; top: 0; z-index: 10; background-color: #ffff56;}
+.wrap .museum .desc:after{content: ''; display: block; width: 1px; height: 80px; position: absolute; right: 0; bottom: 0; z-index: 10; background-color: #ffff56;}
+.wrap .museum .desc h2{display: block; margin-bottom: 40px;}
+.wrap .museum .desc p{display: block; margin-bottom: 85px;}
+.wrap .museum .desc .btn{display: block; width: 220px; height: 50px; margin: 0 auto;}
+.wrap .museum .desc .btn a{display: block; width: 100%;}
+.wrap .museum .desc .btn a img{width: 100%;}
+
+.wrap .other{width: 100%; padding: 220px 120px 290px}
+.wrap .other ul{display: block; width: 100%;}
+.wrap .other ul:after{content: ''; display: block; visibility: hidden; clear: both;}
+.wrap .other ul li{display: block; width: 770px; position: relative;}
+.wrap .other ul li.fl{margin-top: 140px;}
+.wrap .other ul li .bcg{width: 100%;}
+.wrap .other ul li .desc{display: block; padding: 0 0 140px 60px; position: absolute; left: 0; bottom: 0; z-index: 10;}
+.wrap .other ul li .desc dl{display: block;}
+.wrap .other ul li .desc dl dt{margin-bottom: 30px;}
+.wrap .other ul li .desc dl dd:last-child{margin-top: 30px;}

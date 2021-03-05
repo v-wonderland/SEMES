@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SEMES</title>
     <link rel="stylesheet" href="../resources/css/import.css">
+    <link rel="stylesheet" href="../resources/css/global.css">
     <link rel="stylesheet" href="../resources/css/main.css">
     <script src="../resources/js/jqery-3.5.1.min.js"></script>
     <script src="../resources/js/swiper-bundle.min.js"></script>
@@ -21,6 +22,7 @@
                         <li>
                             <a href="#">기업정보</a>
                             <div class="depth02">
+                                <div class="bg"><img src="../resources/images/header_bg.png" alt=""></div>
                                 <ul>
                                     <li>
                                         <ol>
@@ -78,6 +80,7 @@
                         <li>
                             <a href="#">제품소개</a>
                             <div class="depth02">
+                                <div class="bg"><img src="../resources/images/header_bg.png" alt=""></div>
                                 <ul>
                                     <li>
                                         <ol>
@@ -135,6 +138,7 @@
                         <li>
                             <a href="#">홍보센터</a>
                             <div class="depth02">
+                                <div class="bg"><img src="../resources/images/header_bg.png" alt=""></div>
                                 <ul>
                                     <li>
                                         <ol>
@@ -192,6 +196,7 @@
                         <li>
                             <a href="#">인재채용</a>
                             <div class="depth02">
+                                <div class="bg"><img src="../resources/images/header_bg.png" alt=""></div>
                                 <ul>
                                     <li>
                                         <ol>
@@ -249,6 +254,7 @@
                         <li>
                             <a href="#">지속가능경영</a>
                             <div class="depth02">
+                                <div class="bg"><img src="../resources/images/header_bg.png" alt=""></div>
                                 <ul>
                                     <li>
                                         <ol>
@@ -306,6 +312,7 @@
                         <li>
                             <a href="#">고객지원</a>
                             <div class="depth02">
+                                <div class="bg"><img src="../resources/images/header_bg.png" alt=""></div>
                                 <ul>
                                     <li>
                                         <ol>
@@ -383,13 +390,13 @@
                     </div>
                     <div class="swiper-slide" data-title="기술">
                         <dl class="desc">
-                            <dt><img src="../resources/images/main_vsl_tit.png" alt=""></dt>
+                            <dt><img src="../resources/images/main_vsl_02_tit.png" alt=""></dt>
                             <dd><img src="../resources/images/main_vsl_desc.png" alt=""></dd>
                         </dl>
                     </div>
                     <div class="swiper-slide" data-title="현재">
                         <dl class="desc">
-                            <dt><img src="../resources/images/main_vsl_tit.png" alt=""></dt>
+                            <dt><img src="../resources/images/main_vsl_03_tit.png" alt=""></dt>
                             <dd><img src="../resources/images/main_vsl_desc.png" alt=""></dd>
                         </dl>
                     </div>
@@ -397,6 +404,8 @@
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
                 </div>
+                <div class="scroll_btn"><img src="../resources/images/main_vsl_scroll.png" alt=""></div>
+                <div class="bar"><img src="../resources/images/main_vsl_bar.png" alt=""></div>
 
                 <script>
                     var titles = document.querySelectorAll('.main_vsl .sl_wrap .swiper-slide');
@@ -407,6 +416,7 @@
 
                     var swiper = new Swiper('.main_vsl .sl_wrap', {
                         autoHeight: true,
+                        effect: 'fade',
                         pagination: {
                             el: '.main_vsl .sl_wrap .swiper-pagination',
                             clickable: true,
@@ -417,7 +427,232 @@
                     });
                 </script>
             </section>
+
+            <section class="product">
+                <div class="rect"><img src="../resources/images/main_product_rect_bg.png" alt=""></div>
+                <div class="inner">
+                    <div class="tit">
+                        <h2><img src="../resources/images/main_product_tit_h2.png" alt=""></h2>
+                        <p><img src="../resources/images/main_product_tit_p.png" alt=""></p>
+                    </div>
+                    <ul>
+                        <li class="cont_01">
+                            <div class="fl desc">
+                                <dl>
+                                    <dt><img src="../resources/images/main_product_cont_01_dt.png" alt=""></dt>
+                                    <dd><img src="../resources/images/main_product_cont_01_dd_01.png" alt=""></dd>
+                                    <dd><img src="../resources/images/main_product_cont_01_dd_02.png" alt=""></dd>
+                                </dl>
+                                <a href="#"><img src="../resources/images/main_product_view_btn.png" alt=""></a>
+                            </div>
+                            <div class="fr visual"><img src="../resources/images/main_product_cont_01_vsl.png" alt=""></div>
+                        </li>
+                        <li class="cont_02">
+                            <div class="fl visual"><img src="../resources/images/main_product_cont_02_vsl.png" alt=""></div>
+                            <div class="fr desc">
+                                <dl>
+                                    <dt><img src="../resources/images/main_product_cont_02_dt.png" alt=""></dt>
+                                    <dd><img src="../resources/images/main_product_cont_02_dd_01.png" alt=""></dd>
+                                    <dd><img src="../resources/images/main_product_cont_02_dd_02.png" alt=""></dd>
+                                </dl>
+                                <a href="#"><img src="../resources/images/main_product_view_btn.png" alt=""></a>
+                            </div>
+                        </li>
+                        <li class="cont_03">
+                            <div class="fl desc">
+                                <dl>
+                                    <dt><img src="../resources/images/main_product_cont_03_dt.png" alt=""></dt>
+                                    <dd><img src="../resources/images/main_product_cont_03_dd_01.png" alt=""></dd>
+                                    <dd><img src="../resources/images/main_product_cont_03_dd_02.png" alt=""></dd>
+                                </dl>
+                                <a href="#"><img src="../resources/images/main_product_view_btn.png" alt=""></a>
+                            </div>
+                            <div class="fr visual"><img src="../resources/images/main_product_cont_03_vsl.png" alt=""></div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="equip">
+                <div class="visual">
+                    <div class="tit">
+                        <p class="eng">CLEAN</p>
+                    </div>
+                    <div class="tab"><img src="../resources/images/equip_left_tab.png" alt=""></div>
+                </div>
+                <div class="sl_wrap">
+                    
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide" data-slideNumb="0">
+                            <img src="../resources/images/equipment_right_bg_01.png" alt="">
+                        </div>
+                        <div class="swiper-slide" data-slideNumb="1">
+                            <img src="../resources/images/equipment_right_bg_02.png" alt="">
+                        </div>
+                        <div class="swiper-slide" data-slideNumb="2">
+                            <img src="../resources/images/equipment_right_bg_03.png" alt="">
+                        </div>
+                        </div>
+                    </div>
+                    
+                
+                    <div class="swiper-pagination"></div>
+
+                    <!-- Initialize Swiper -->
+                    <script>
+                        var titles = document.querySelectorAll('.equip .sl_wrap .swiper-slide');
+                        var title = [];
+                            titles.forEach(function(element) {
+                                title.push(element.dataset.title);
+                            });
+
+                        var swiper = new Swiper('.equip .sl_wrap .swiper-container', {
+                            autoHeight:'auto',
+                            loop:'true',
+                            slidesPerView: 'auto',
+                            spaceBetween: 100,
+                            // pagination: {
+                            //     el: '.equip .sl_wrap .swiper-pagination.paging',
+                            //     clickable: true,
+                            //     renderBullet: function (index, className) {
+                            //         return '<span class="' + className + '">' + title[index] + '</span>';
+                            //     },
+                            // },
+                            pagination: {
+                                el: '.equip .sl_wrap .swiper-pagination',
+                                type: 'progressbar',
+                            },
+                        });
+
+                    </script>
+                </div>
+            </section>
+
+            <section class="company">
+                <div class="desc">
+                    <h2><img src="../resources/images/Company_h2.png" alt=""></h2>
+                    <dl>
+                        <dt><img src="../resources/images/company_desc_dt.png" alt=""></dt>
+                        <dd><img src="../resources/images/company_desc_dd.png" alt=""></dd>
+                    </dl>
+                    <a href="#"><img src="../resources/images/company_desc_btn.png" alt=""></a>
+                </div>
+                <div class="visual">
+                    <img src="../resources/images/company_hand.png" alt="">
+                </div>
+            </section>
+
+            <section class="busi">
+                <h2><img src="../resources/images/busi_h2.png" alt=""></h2>
+                <dl>
+                    <dt><img src="../resources/images/busi_dt.png" alt=""></dt>
+                    <dd><img src="../resources/images/busi_dd.png" alt=""></dd>
+                </dl>
+                <ul>
+                    <li><img src="../resources/images/busi_cont_01.png" alt=""></li>
+                    <li><img src="../resources/images/busi_cont_02.png" alt=""></li>
+                    <li><img src="../resources/images/busi_cont_03.png" alt=""></li>
+                    <li><img src="../resources/images/busi_cont_04.png" alt=""></li>
+                </ul>
+                <a href="#"><img src="../resources/images/busi_btn.png" alt=""></a>
+            </section>
+
+            <section class="media">
+                <div class="tit">
+                    <h2><img src="../resources/images/media_h2.png" alt=""></h2>
+                    <p><img src="../resources/images/media_p.png" alt=""></p>
+                </div>
+                <div class="sl_wrap">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="bcg"><img src="../resources/images/media_slide_01.png" alt=""></div>
+                                <div class="desc">회사와 동반성장 하는<br>공정 엔지니어</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="bcg"><img src="../resources/images/media_slide_02.png" alt=""></div>
+                                <div class="desc">
+                                    <dl>
+                                        <dt><img src="../resources/images/media_slide_dt.png" alt=""></dt>
+                                        <dd><img src="../resources/images/media_slide_02_dd.png" alt=""></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="bcg"><img src="../resources/images/media_slide_03.png" alt=""></div>
+                                <div class="desc">회사와 동반성장 하는<br>공정 엔지니어</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="bcg"><img src="../resources/images/media_slide_04.png" alt=""></div>
+                                <div class="desc">
+                                    <dl>
+                                        <dt><img src="../resources/images/media_slide_dt.png" alt=""></dt>
+                                        <dd><img src="../resources/images/media_slide_04_dd.png" alt=""></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="bcg"><img src="../resources/images/media_slide_05.png" alt=""></div>
+                                <div class="desc">나의 꿈은<br>SW Architect!</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="bcg"><img src="../resources/images/media_slide_06.png" alt=""></div>
+                                <div class="desc">
+                                    <dl>
+                                        <dt><img src="../resources/images/media_slide_dt.png" alt=""></dt>
+                                        <dd><img src="../resources/images/media_slide_06_dd.png" alt=""></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        var swiper = new Swiper('.media .sl_wrap .swiper-container', {
+                            slidesPerView: 'auto',
+                            spaceBetween: 100,
+                            freeMode: true,
+                        });
+                    </script>
+                </div>
+                <div class="btn_wrap"><a href="#"><img src="../resources/images/media_btn.png" alt=""></a></div>
+            </section>
+
+            <section class="museum">
+                <div class="desc">
+                    <h2><img src="../resources/images/museum_dt.png" alt=""></h2>
+                    <p><img src="../resources/images/museum_dd.png" alt=""></p>
+                    <div class="btn"><a href="#"><img src="../resources/images/museum_btn.png" alt=""></a></div>
+                </div>
+            </section>
+
+            <section class="other">
+                <ul>
+                    <li class="fl">
+                        <div class="bcg"><img src="../resources/images/other_cont_01.png" alt=""></div>
+                        <div class="desc">
+                            <dl>
+                                <dt><img src="../resources/images/other_cont_01_dt.png" alt=""></dt>
+                                <dd><img src="../resources/images/other_cont_01_dd_01.png" alt=""></dd>
+                                <dd><img src="../resources/images/other_cont_01_dd_02.png" alt=""></dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="fr">
+                        <div class="bcg"><img src="../resources/images/other_cont_02.png" alt=""></div>
+                        <div class="desc">
+                            <dl>
+                                <dt><img src="../resources/images/other_cont_01_dt.png" alt=""></dt>
+                                <dd><img src="../resources/images/other_cont_02_dd_01.png" alt=""></dd>
+                                <dd><img src="../resources/images/other_cont_02_dd_02.png" alt=""></dd>
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </section>
         </main>
+        <footer><img src="../resources/images/footer.png" alt=""></footer>
     </div>
 </body>
 </html>
