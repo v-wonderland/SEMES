@@ -141,37 +141,6 @@ $(document).ready(function(){
         }
         lastT = st;
     });
-
-    $(window).scroll(function(){
-        var st = $(window).scrollTop();
-        var bh = $(window).height();
-
-        $('.move.left').each(function(){
-                var $this = $(this);
-                var my_st = $this.offset().top - (bh * 1);
-
-                if(st > my_st){
-                        $this.addClass('active');
-                }
-        });
-
-        $('.move.right').each(function(){
-                var $this = $(this);
-                var my_st = $this.offset().top - (bh * 1);
-
-                if(st > my_st){
-                        $this.addClass('active');
-                }
-        });
-        $('.move').each(function(){
-                var $this = $(this);
-                var my_st = $this.offset().top - (bh * 1);
-
-                if(st > my_st){
-                        $this.addClass('active');
-                }
-        });
-    });
     
     $(function(){
         setPop();
@@ -269,7 +238,41 @@ $(document).ready(function(){
         $('#product main .vsl .cont.photo h2').removeClass('active');
     });
 
-    // $('#product main .vsl .cont h2').mouseleave(function(){
-    //     $(this).removeClass('active');
-    // });
+    $( '.top_btn' ).click( function() {
+        $( 'html, body' ).animate( { scrollTop : 0 }, 1200 );
+        return false;
+    });
+
+    
+    
+    $(window).scroll(function(){
+        var st = $(window).scrollTop();
+        var bh = $(window).height();
+
+        $('.move.left').each(function(){
+                var $this = $(this);
+                var my_st = $this.offset().top - (bh * 1);
+
+                if(st > my_st){
+                        $this.addClass('active');
+                }
+        });
+
+        $('.move.right').each(function(){
+                var $this = $(this);
+                var my_st = $this.offset().top - (bh * 1);
+
+                if(st > my_st){
+                        $this.addClass('active');
+                }
+        });
+        $('.move').each(function(){
+                var $this = $(this);
+                var my_st = $this.offset().top - (bh * 1);
+
+                if(st > my_st){
+                        $this.addClass('active');
+                }
+        });
+    });
 });

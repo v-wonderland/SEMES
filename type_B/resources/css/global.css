@@ -59,6 +59,7 @@ body{
 
 .wrap header .gnb ul > li .depth02 > ul > li ol li{padding: 20px 0 0 0; font-size: 18px; font-weight: 700; line-height-step: 1; cursor: pointer; color: #000;}
 .wrap header .gnb ul > li .depth02 > ul > li ol li:hover{color: #067bcd;}
+.wrap header .gnb ul > li .depth02 > ul > li ol li > a{padding-bottom: 0; border-bottom: none;}
 
 .wrap header .util{display:block; padding-top: 5px;}
 .wrap header .util ul:after{content: ''; display: block; visibility: hidden;  clear: both;}
@@ -72,5 +73,6 @@ body{
 .wrap header:hover .util ul > li.global a{background: url('../images/global_black.png')no-repeat 0 0;}
 .wrap header:hover .util ul > li.ham a{background: url('../images/hamburger_black.png')no-repeat 0 0;}
 
-.wrap footer{width: 100%;}
-.wrap footer img{width: 100%;}
+footer{width: 100%; position: relative;}
+footer img{width: 100%;}
+footer .top_btn{position: absolute; width: 48px; height: 48px; cursor: pointer; right: 24px; top: -68px; z-index: 10;}

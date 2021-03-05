@@ -3,7 +3,7 @@ $(function(){
     var $indices = $('.indices .index', $sectionprocess);
     var $indicesSmall = $('.indices-sm .index', $sectionprocess);
     var $bgs = $('.section-bg', $sectionprocess);
-    var duration = 50000;
+    var duration = 7000;
     var tick = null;
     var currentIndex = 1;
     var isTrans = false;

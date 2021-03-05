@@ -1,11 +1,4 @@
 $(document).ready(function(){
-    $('#mGnb ul li').click(function(){
-        $('.all_menu').addClass('on');
-    })
-    
-    $('.all_menu ul li').click(function(){
-        $('.all_menu').removeClass('on');
-    })
 
     var mainCtrl = new ScrollMagic.Controller;
     $('.scrollCtr').each(function(i, e) {
@@ -66,5 +59,41 @@ $(document).ready(function(){
         // })).addTo(mainCtrl);
 
     });
+    
+    $(window).scroll(function(){
+        var st = $(window).scrollTop();
+        var bh = $(window).height();
 
+        $('.move.left').each(function(){
+                var $this = $(this);
+                var my_st = $this.offset().top - (bh * 1);
+
+                if(st > my_st){
+                        $this.addClass('active');
+                }
+        });
+
+        $('.move.right').each(function(){
+                var $this = $(this);
+                var my_st = $this.offset().top - (bh * 1);
+
+                if(st > my_st){
+                        $this.addClass('active');
+                }
+        });
+        $('.move').each(function(){
+                var $this = $(this);
+                var my_st = $this.offset().top - (bh * 1);
+
+                if(st > my_st){
+                        $this.addClass('active');
+                }
+        });
+    });
+
+    
+    $( '.top_btn' ).click( function() {
+        $( 'html, body' ).animate( { scrollTop : 0 }, 1200 );
+        return false;
+    } );
 });

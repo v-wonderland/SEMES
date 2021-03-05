@@ -158,8 +158,9 @@ header .util .museum span{font-size: 16px;}
 .gnb .gnb_wrap .bt_menu ul:after{content: ''; display: block; visibility: hidden; clear: both;}
 .gnb .gnb_wrap .bt_menu ul li{float: left; margin-right: 40px;}
 
-footer{width: 100%;}
+footer{width: 100%; position: relative;}
 footer img{width: 100%;}
+footer .top_btn{position: absolute; width: 48px; height: 48px; cursor: pointer; right: 24px; top: -68px; z-index: 10;}
 
 @media screen and (min-width:2560px){
     .gnb .gnb_wrap{padding:0 320px;}
