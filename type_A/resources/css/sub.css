@@ -4,8 +4,27 @@ main{width: 100%;}
 .fr{float: right;}
 .ns{font-family: "Nunito Sans" !important;}
 
-.vsl{width: 100%; height: 100vh;}
-.vsl img{width: 100%; height: 100%;}
+.vsl{
+    width: 100%; height: 1000px;
+    position: relative;
+    background-image: url('../images/product/main_vsl_bg_01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.vsl .inner{display: block; width: auto; height: 100%; position: absolute; right: 0; top: 0; z-index: 0;}
+.vsl .inner:after{content: ''; display: block; visibility: hidden; clear: both;}
+.vsl .inner .cont{display: block; width: auto; height: 100%; float: left; position: relative; padding: 444px 101px 0; box-sizing: border-box;}
+.vsl .inner .cont h2{font-size: 96px; font-weight: 300; line-height: 1; color: #fff; opacity: 0.5; cursor: pointer; position: relative; z-index: 10;}
+.vsl .inner .cont h2.active{opacity: 1;}
+.vsl .inner .cont.clean h2.active + span{background:url('../images/product/main_vsl_clean_bg.png')}
+.vsl .inner .cont.photo h2.active + span{background:url('../images/product/main_vsl_photo_bg.png')}
+.vsl .inner .cont.etch h2.active + span{background:url('../images/product/main_vsl_etch_bg.png')}
+.vsl .inner .cont span{display: block; width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 5;}
+/* .vsl ul{width: auto; height: 100%; position: absolute; right: 0; top: 0; z-index: 10;}
+.vsl ul:after{content: ''; display: block; visibility: hidden; clear: both;}
+.vsl ul li{display: block; float: left; width: auto; height: 100%; padding: 444px 102px 0; box-sizing: border-box; }
+.vsl ul li a{display: inline-block; font-size: 96px; font-weight: 300; line-height: 1; color: #fff; opacity: 0.5; cursor: pointer;}
+.vsl ul li a:hover{opacity: 1;} */
 
 .sect_02{
     width: 100%; padding: 160px 0 130px 530px; 
@@ -19,12 +38,12 @@ main{width: 100%;}
 }
 
 .sect_03{
-    width: 100%; height: 100%; overflow: hidden;
+    width: 100%; min-height: 600px; overflow: hidden;
 }
 .sect_03 .bcg1{
-    width: 100%; height: 500px;
-    background: url('../images/product_sect_03_bg.png')no-repeat right 0;
-    background-size: 100%;
+    width: 100%; min-height: 600px;
+    background: url('../images/product_sect_03_bg_02.png')no-repeat right 0;
+    background-size: 100%; background-attachment: fixed;
 }
 
 

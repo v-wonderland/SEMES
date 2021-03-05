@@ -12,7 +12,7 @@
     <script src="../resources/js/plugin.js"></script>
     <script src="../resources/js/swiper-bundle.min.js"></script>
 </head>
-<body>
+<body id="product">
     <div class="wrap">
         <header>
             <h1 class="eng"><a href="Main.html"><img src="../resources/images/logo.png" alt=""></a></h1>
@@ -116,8 +116,32 @@
             </nav>
         </header>
         <main>
-            <section class="vsl">
-                <img src="../resources/images/product_main_vsl.png" alt="clean">
+            <section class="vsl" id="vslBg">
+                <div class="inner">
+                    <div class="cont eng clean">
+                        <h2 class="active" data-vslNumb="0">Clean</h2>
+                        <span></span>
+                    </div>
+                    <div class="cont eng photo">
+                        <h2 data-vslNumb="1">Photo</h2>
+                        <span></span>
+                    </div>
+                    <div class="cont eng etch">
+                        <h2 data-vslNumb="2">Etch</h2>
+                        <span></span>
+                    </div>
+                </div>
+                <!-- <ul>
+                    <li>
+                        <a class="eng">Clean</a>
+                    </li>
+                    <li>
+                        <a class="eng">Photo</a>
+                    </li>
+                    <li>
+                        <a class="eng">Etch</a>
+                    </li>
+                </ul> -->
             </section>
     
             <section class="sect_02">
@@ -334,11 +358,10 @@
                     <script>
                         var swiper = new Swiper('.swiper-container', {
                             direction: 'vertical',
-                            effect: 'fade',
                             speed: 800,
                             slidesPerView: 1,
                             spaceBetween: 0,
-                            mousewheel: false,
+                            mousewheel: true,
                         });
                     </script>
                 </div>

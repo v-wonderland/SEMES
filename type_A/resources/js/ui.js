@@ -227,4 +227,26 @@ $(document).ready(function(){
             $('.equip .info_btn .close4').fadeOut(200);
         })
     }
+
+    var currentIndex = 0;
+    var vslImg = ["main_vsl_bg_01.png","main_vsl_bg_02.png","main_vsl_bg_03.png"];
+    var $target = $("#product main .vsl .cont h2");
+    var $changeTarget = $("#product main #vslBg");
+
+    $($target).mouseenter(function(){
+        currentIndex = $(this).attr("data-vslNumb");
+        $changeTarget.css({
+            "background-image" : "url(" + "../" + "resources/" + "images/"+ " product/ "+ vslImg[currentIndex] + ")",
+            "background-repeat" : "no-repeat",
+            "background-size" : "cover"
+        });
+    });
+
+    $('#product main .vsl .cont h2').mouseenter(function(){
+        $(this).addClass('active');
+    });
+
+    $('#product main .vsl .cont h2').mouseleave(function(){
+        $(this).removeClass('active');
+    });
 });
