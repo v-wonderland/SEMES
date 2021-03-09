@@ -9,7 +9,7 @@ main{width: 100%; max-width: 1920px; margin: 0 auto;}
 } */
 
 .swiper-container-horizontal>.swiper-scrollbar{
-    opacity: 1 !important; background: rgba(0, 0, 0, 0.2); width: 160px; height: 2px; transform: rotate(90deg);
+    opacity: 1 !important; background: rgba(255, 255, 255, 0.2); width: 160px; height: 2px; transform: rotate(90deg);
     left: -20px; bottom: 50%;
 }
 .swiper-scrollbar-drag{background: rgba(255, 255, 255, 1);}
