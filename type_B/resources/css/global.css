@@ -132,7 +132,7 @@ body{
 }
 .sectNav ul li a.active {
     color: rgba(0, 0, 0, 1);
-    font-weight: 400;
+    font-weight: 700;
     transition-delay: 0.25s;
 }
 .sectNav ul li a.active:before {

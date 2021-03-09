@@ -51,8 +51,15 @@
 	font-weight: 800;
 	src: url('../font/BlenderPro-Heavy.ttf');
 }
+
 @font-face{
 	font-family: GothamPro;
 	font-weight: 400;
 	src: url('../font/GothamPro.ttf');
+}
+
+@font-face{
+	font-family: GothamPro;
+	font-weight: 700;
+	src: url('../font/GothamPro-Bold.ttf');
 }
