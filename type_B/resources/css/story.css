@@ -7,9 +7,14 @@
 .wrap .main_vsl .sl_wrap .swiper-container{width: 100%; height: 100%;}
 .wrap .main_vsl .sl_wrap .swiper-container .swiper-slide{width: 100%; height: 100%; position: relative;}
 .wrap .main_vsl .sl_wrap .swiper-container .swiper-slide .desc{display: block; position: absolute; top: 50%; left: 50%; z-index: 15; transform: translate(-50%, -50%); text-align: center;}
-.wrap .main_vsl .sl_wrap .swiper-container .swiper-slide .desc dt{display: block; margin-bottom: 42px;}
-.wrap .main_vsl .sl_wrap .swiper-container .swiper-slide .desc dd{display: block;}
-.wrap .main_vsl .sl_wrap .swiper-container .swiper-slide .desc .line{display: block; margin-bottom: 38px;}
+
+.wrap .main_vsl .sl_wrap .swiper-container .swiper-slide .desc dt{display: block; margin-bottom: 42px; opacity: 0; transform: translate(0, 100px); transition: 1.2s ease-in-out;}
+.wrap .main_vsl .sl_wrap .swiper-container .swiper-slide .desc dd{display: block; opacity: 0; transform: translate(0,100px); transition: 1.6s ease-in-out;}
+.wrap .main_vsl .sl_wrap .swiper-container .swiper-slide .desc .line{display: block; margin-bottom: 38px; opacity: 0; transform: translate(0, 100px);transition: 1.4s ease-in-out;}
+
+.wrap .main_vsl .sl_wrap .swiper-container .swiper-slide.swiper-slide-active .desc dt{opacity: 1; transform: translate(0, 0);}
+.wrap .main_vsl .sl_wrap .swiper-container .swiper-slide.swiper-slide-active .desc dd{opacity: 1; transform: translate(0, 0);}
+.wrap .main_vsl .sl_wrap .swiper-container .swiper-slide.swiper-slide-active .desc .line{opacity: 1; transform: translate(0, 0);}
 
 .wrap .main_vsl .sl_wrap .prev,
 .wrap .main_vsl .sl_wrap .next{display: block; position: absolute; top: 50%; z-index: 15; cursor: pointer; transform: translateY(-50%);}

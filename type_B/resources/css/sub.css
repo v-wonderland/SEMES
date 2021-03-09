@@ -1,3 +1,4 @@
+html{overflow-x: hidden;}
 body{width: 100%; max-width: 1920px; margin: 0 auto; font-family: "Noto sans CJK KR";}
 .wrap{width: 100%; max-width: 1920px; margin: 0 auto; position: relative; z-index: 0;}
 .wrap main{width: 100%;}
@@ -38,7 +39,7 @@ footer .top_btn{position: absolute; width: 48px; height: 48px; cursor: pointer; 
 .wrap header .gnb ul > li:hover a{padding-bottom: 44px; border-bottom: 3px solid #067bcd;}
 
 .wrap header .gnb ul > li .depth02{
-    display: block; visibility: hidden; width: 100%; height: 340px; padding: 30px 0 0 420px; background: #fff; 
+    display: block; visibility: hidden; width: 100%; height: 380px; padding: 30px 0 0 420px; background: #fff; 
     position: absolute; left: 0; top: 110px; right: 0; z-index: 15; opacity: 0;
     transition: 0.35s ease-in-out;
 }
@@ -47,14 +48,14 @@ footer .top_btn{position: absolute; width: 48px; height: 48px; cursor: pointer; 
 
 .wrap header .gnb ul > li .depth02 > ul{display: inline-block;}
 .wrap header .gnb ul > li .depth02 > ul > li{margin-right: 0;}
-.wrap header .gnb ul > li .depth02 > ul > li:first-child ol{margin-right: 75px;}
-.wrap header .gnb ul > li .depth02 > ul > li:nth-child(2) ol{margin-right: 50px;}
-.wrap header .gnb ul > li .depth02 > ul > li:nth-child(3) ol{margin-right: 50px;}
-.wrap header .gnb ul > li .depth02 > ul > li:nth-child(4) ol{margin-right: 98px;}
-.wrap header .gnb ul > li .depth02 > ul > li:nth-child(5) ol{margin-right: 88px;}
+.wrap header .gnb ul > li .depth02 > ul > li:first-child ol{margin-right: 90px;}
+.wrap header .gnb ul > li .depth02 > ul > li:nth-child(2) ol{margin-right: 105px;}
+.wrap header .gnb ul > li .depth02 > ul > li:nth-child(3) ol{margin-right: 60px;}
+.wrap header .gnb ul > li .depth02 > ul > li:nth-child(4) ol{margin-right: 104px;}
+.wrap header .gnb ul > li .depth02 > ul > li:nth-child(5) ol{margin-right: 80px;}
 .wrap header .gnb ul > li .depth02 > ul > li:last-child ol{margin-right: 0;}
 
-.wrap header .gnb ul > li .depth02 > ul > li ol li{padding: 20px 0 0 0; font-size: 18px; font-weight: 700; line-height-step: 1; cursor: pointer; color: #000;}
+.wrap header .gnb ul > li .depth02 > ul > li ol li{padding: 20px 0 0 0; font-size: 16px; font-weight: 700; line-height-step: 1; cursor: pointer; color: #000;}
 .wrap header .gnb ul > li .depth02 > ul > li ol li:hover{color: #067bcd;}
 .wrap header .gnb ul > li .depth02 > ul > li ol li > a{padding-bottom: 0; border-bottom: none;}
 
