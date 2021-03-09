@@ -120,7 +120,7 @@ header .util .museum span{font-size: 16px;}
 .gnb .gnb_wrap .nav .menu > li{
     font-family: "Blender Pro"; 
     font-size: 40px; font-weight: 700; line-height: 1; color: #fff;
-    display: block; width: 490px; margin: 40px 0 0 0; padding-right: 400px;
+    display: block; width: 490px; margin: 40px 0 0 0; padding-right: 200px;
     position: relative; z-index: 10;
     cursor: pointer;
 }
@@ -129,9 +129,13 @@ header .util .museum span{font-size: 16px;}
     position: absolute; left: 0; bottom: -15px; z-index: 5;
     transition: width 0.35s ease-in;
 }
-.gnb .gnb_wrap .nav .menu > li:hover .dep01:before{
-    width: 57%;
-}
+.gnb .gnb_wrap .nav .menu > li:first-child:hover .dep01:before{width: 63%;}
+.gnb .gnb_wrap .nav .menu > li:nth-child(2):hover .dep01:before{width: 61%;}
+.gnb .gnb_wrap .nav .menu > li:nth-child(3):hover .dep01:before{width: 56%;}
+.gnb .gnb_wrap .nav .menu > li:nth-child(4):hover .dep01:before{width: 61%;}
+.gnb .gnb_wrap .nav .menu > li:nth-child(5):hover .dep01:before{width: 74%;}
+.gnb .gnb_wrap .nav .menu > li:last-child:hover .dep01:before{width: 65%;}
+
 .gnb .gnb_wrap .nav .menu > li .dep01{padding: 0 0 10px 295px;}
 .gnb .gnb_wrap .nav .menu > li a{display: inline-block; opacity: 0.5;}
 .gnb .gnb_wrap .nav .menu > li:hover a{opacity: 1;}
