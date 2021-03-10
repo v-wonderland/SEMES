@@ -64,7 +64,7 @@ $(document).ready(function(){
         var st = $(window).scrollTop();
         var bh = $(window).height();
 
-        $('.move.left').each(function(){
+        $('.left').each(function(){
                 var $this = $(this);
                 var my_st = $this.offset().top - (bh * 1);
 
@@ -73,7 +73,7 @@ $(document).ready(function(){
                 }
         });
 
-        $('.move.right').each(function(){
+        $('.right').each(function(){
                 var $this = $(this);
                 var my_st = $this.offset().top - (bh * 1);
 
